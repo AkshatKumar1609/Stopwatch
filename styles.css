@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: #ffffff;
+}
+
+.stopwatch-container {
+  text-align: center;
+  background-color: #3b3f45;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.time {
+  font-size: 60px;
+  font-weight: bold;
+  color: #61dafb;
+  margin-bottom: 30px;
+  width: 250px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 20px;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #52c7e3;
+  transform: scale(1.05);
+}
+
+.laps {
+  margin-top: 30px;
+  background-color: #444b52;
+  color: white;
+  padding: 0 30px 0 10px;
+  border-radius: 15px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.lap-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+  border-bottom: 1px solid #555b62;
+}
+
+.lap-index, .lap-value {
+  flex: 1;
+  text-align: center;
+}
+
+.lap-remove {
+  background-color: #e57373;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.lap-remove:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+.lap-row:last-child {
+  border-bottom: none;
+}
